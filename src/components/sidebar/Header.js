@@ -1,7 +1,7 @@
 import React from 'react';
 import profilepicture from '../../assets/images/profilepicture.jpeg';
 import { CDBSidebarHeader } from 'cdbreact';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import '../../assets/css/Sidebar.css';
 
 const Header = () => {
@@ -21,11 +21,11 @@ const Header = () => {
           </div>
 
           <div id='header-social-icons'>
-            <a rel="noreferrer" className='header-icons' target = "_blank" href = {"https://linkedin.com/in/gustavo-sm"}>
-              <FaLinkedin size={'30px'} color={"#0072b1"}/>
+            <a rel="noreferrer" className='header-icons' target = "_blank" href = "https://linkedin.com/in/gustavo-sm">
+              <FaLinkedinIn size='30px' color="#0072b1"/>
             </a>
-            <a rel="noreferrer" className='header-icons' target = "_blank" href = {"https://github.com/gus-sm"}>
-              <FaGithub size={'30px'} color={"#bd2c00"}/>
+            <a rel="noreferrer" className='header-icons' target = "_blank" href = "https://github.com/gus-sm">
+              <FaGithub size='30px' color="#bd2c00"/>
             </a>
           </div>
         </CDBSidebarHeader>
