@@ -11,7 +11,7 @@ const manageSessionStorage = () => {
         return value;
     }
     
-    return {set, get};
+    return {get, set};
 
 }
 
