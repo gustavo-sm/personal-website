@@ -1,5 +1,6 @@
 .App {
-  background-color: #3c3f58;
+  /*background-color: #3c3f58;*/
+  background-color: #2e3035;
   display: flex;
   column-gap: 10px;
 }
