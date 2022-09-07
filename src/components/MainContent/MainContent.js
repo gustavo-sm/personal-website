@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CanvasDrawing from './contents/CanvasDrawing';
 import manageSessionStorage from '../../helpers/manageSessionStorage';
 
 const contentObj = {
@@ -24,7 +25,7 @@ const MainContent = () => {
   }
 
   return (
-    <div style={{color:"#009dff", width: "100%", margin: "10px 0 0 10px", display:'flex'}}>
+    <div style={{color:"#009dff", width: "100%", overflow: 'hidden', margin: "10px 0 0 10px", display:'flex'}}>
       
       {text ? 
         <>
@@ -32,8 +33,14 @@ const MainContent = () => {
           <p onClick={handleCloseClick}> x </p> 
         </>
 
-      : <h1>Bem-vindos ao meu site!</h1>
-      }
+      : 
+      <div>
+        <h4>Olá, tudo bem com você? Sou o</h4>
+        <h3>Gustavo Mashiba</h3>
+        <h4>Bem-vindo ao meu website :)</h4>
+      </div>}
+      <CanvasDrawing/>
+
     </div>
   );
 };
