@@ -10,7 +10,7 @@ const SidebarComponent = () => {
 
   return (
     <div id='sidebar-wrapper'>
-      <Sidebar id='sidebar' textColor="#fff" backgroundColor="#2e3035">
+      <Sidebar id='sidebar' textColor="#fff" backgroundColor={/*"#2e3035"*/ "#3c3f58" }>
         <SidebarHeader/>
         
         <SidebarContent>
