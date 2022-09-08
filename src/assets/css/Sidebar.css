@@ -1,3 +1,7 @@
+#sidebar-wrapper-hidden{
+    display: none;
+}
+
 #sidebar-wrapper{
     display: flex;
     height: 100vh;

@@ -3,7 +3,7 @@ import React,{useEffect} from 'react';
 const CanvasDrawing = () => {
 
     useEffect(() => {
-        init();
+        initCanvas();
     }, []);
 
 
@@ -17,7 +17,7 @@ const CanvasDrawing = () => {
         w, h;
     
 
-    function init() {
+    function initCanvas() {
         canvas = document.getElementById('canvasDrawing');
         ctx = canvas.getContext("2d");
         w = canvas.width;
@@ -56,7 +56,7 @@ const CanvasDrawing = () => {
         draw(prevX, prevY, currX, currY);
     }
   return (
-    <canvas id='canvasDrawing' width="1920" height="954" style={{position:"fixed", top:"0", left:"0", width:"1920", height:"954"}}></canvas>
+    <canvas id='canvasDrawing' width="1920" height="954" style={{position:"fixed", top:"0", left:"0", width:"1920", height:"954", zIndex:0}}></canvas>
   );
 };
 

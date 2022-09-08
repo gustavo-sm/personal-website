@@ -16,28 +16,24 @@ const MainContent = () => {
   window.addEventListener('selectedChanged', () => {
     const selectedValue = storageManager.get('selected');
     setText(contentObj[selectedValue]);
-
   });
 
-  function handleCloseClick(){
-    storageManager.set('selected', '');
-    window.dispatchEvent(new Event("selectedChanged"));
+  function handleClick(){
+    window.dispatchEvent(new Event("continueClicked"));
   }
 
   return (
     <div style={{color:"#009dff", width: "100%", overflow: 'hidden', margin: "10px 0 0 10px", display:'flex'}}>
-      
       {text ? 
         <>
           <h1>{text}</h1>
-          <p onClick={handleCloseClick}> x </p> 
         </>
-
       : 
-      <div>
+      <div style={{zIndex:1}}>
         <h4>Olá, tudo bem com você? Sou o</h4>
         <h3>Gustavo Mashiba</h3>
         <h4>Bem-vindo ao meu website :)</h4>
+        <button onClick={handleClick}> TESTE </button>
       </div>}
       <CanvasDrawing/>
 
