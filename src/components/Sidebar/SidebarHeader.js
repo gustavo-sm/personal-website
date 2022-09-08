@@ -12,7 +12,7 @@ const SidebarHeader = () => {
           </div>
           
           <div id='header-basic-info'>
-            <h2 style={{ fontSize : "1.2vw"}}>
+            <h2 style={{ fontSize : "1.1vw"}}>
               Gustavo Mashiba
             </h2>
             <small>Brasileiro, 23 anos</small><br/>
