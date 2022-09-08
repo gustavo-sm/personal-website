@@ -25,7 +25,7 @@ const SidebarComponent = () => {
   return (
 
       <div id={sidebarClass}>
-        <Sidebar id='sidebar' textColor="#fff" backgroundColor={/*"#2e3035"*/ "#2e3035" }>
+        <Sidebar id='sidebar' textColor="#fff" backgroundColor={"#2e3035" }>
           <SidebarHeader/>
           
           <SidebarContent>
