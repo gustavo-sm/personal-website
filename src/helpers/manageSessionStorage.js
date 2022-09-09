@@ -10,8 +10,12 @@ const manageSessionStorage = () => {
             return;
         return value;
     }
+
+    function destroy(){
+        sessionStorage.clear();
+    }
     
-    return {get, set};
+    return {get, set, destroy};
 
 }
 
