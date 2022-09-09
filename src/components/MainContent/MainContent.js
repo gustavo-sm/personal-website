@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import CanvasDrawing from './contents/CanvasDrawing';
+//import CanvasDrawing from './contents/CanvasDrawing';
+import Button from 'react-bootstrap/Button';
 import manageSessionStorage from '../../helpers/manageSessionStorage';
 
 const contentObj = {
@@ -11,6 +12,7 @@ const contentObj = {
 
 const MainContent = () => {
   const [text, setText] = useState('');
+  const [tstClass, setTstClass] = useState('slideText-normal');
   const storageManager = manageSessionStorage();
 
   window.addEventListener('selectedChanged', () => {
@@ -20,6 +22,7 @@ const MainContent = () => {
 
   function handleClick(){
     window.dispatchEvent(new Event("continueClicked"));
+    setTstClass('slideText');
   }
 
   return (
@@ -29,13 +32,13 @@ const MainContent = () => {
           <h1>{text}</h1>
         </>
       : 
-      <div style={{zIndex:1}}>
-        <h4>Olá, tudo bem com você? Sou o</h4>
-        <h3>Gustavo Mashiba</h3>
-        <h4>Bem-vindo ao meu website :)</h4>
-        <button onClick={handleClick}> TESTE </button>
+      <div className = {tstClass} style={{zIndex:1, marginTop: '25vh'}}>
+        <h4 style={{fontSize: '72px'}}>Olá, tudo bem com você?</h4>
+        <h3 style={{fontSize: '96px'}}>Me chamo Gustavo</h3>
+        <h4 style={{fontSize: '72px'}}>Bem-vindo ao meu website :)</h4>
+        <Button size='lg' onClick={handleClick}>Ok</Button>
       </div>}
-      <CanvasDrawing/>
+      {/*<CanvasDrawing/>*/}
 
     </div>
   );
