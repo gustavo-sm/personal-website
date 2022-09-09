@@ -1,16 +1,30 @@
+@keyframes appear {
+    100% {opacity: 1;}
+}
+
 #sidebar-wrapper-hidden{
     display: none;
 }
 
-@keyframes slide {
-    100% {opacity: 1;}
+/*@media (max-width: 720px) { 
+    #sidebar-wrapper-hidden, #sidebar-wrapper {
+        position: static;
+    }
+    #sidebar{
+        width: 50%;
+    }
 }
+
+#sidebar-wrapper-hidden, #sidebar-wrapper {
+    position: absolute;
+    left:0;
+}*/
 
 #sidebar-wrapper{
     opacity: 0;
     display: flex;
     height: 100vh;
-    animation: slide 2s forwards;
+    animation: appear 2s forwards;
     z-index: 1;
     /*overflow: scroll initial;*/
 
@@ -63,4 +77,19 @@
 
 .sidebar-link :hover{
     background-color: #3f3f3f;
+}
+
+@keyframes slidetxt {
+    100% {top: 0;}
+}
+
+.slideText-normal{
+    opacity: 0;
+    animation: appear 2s forwards;
+}
+
+.slideText{
+    position: absolute;
+    top: -800px;
+    animation: slidetxt 3s forwards;
 }
