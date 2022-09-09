@@ -15,7 +15,7 @@ const SidebarHeader = () => {
             <h2 style={{ fontSize : "1.1vw"}}>
               Gustavo Mashiba
             </h2>
-            <small>Brasileiro, 23 anos</small><br/>
+            <small style={{color:'yellow'}}>Node.js developer</small>
           </div>
 
           <div id='header-social-icons'>
