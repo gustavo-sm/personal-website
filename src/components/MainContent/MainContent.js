@@ -11,32 +11,32 @@ const contentObj = {
 };
 
 const MainContent = () => {
-  const [text, setText] = useState('');
-  const [tstClass, setTstClass] = useState('slideText-normal');
+  const [textContent, setTextContent] = useState('');
+  const [textClass, setTextClass] = useState('slideText-normal');
   const storageManager = manageSessionStorage();
 
   window.addEventListener('selectedChanged', () => {
     const selectedValue = storageManager.get('selected');
-    setText(contentObj[selectedValue]);
+    setTextContent(contentObj[selectedValue]);
   });
 
   function handleClick(){
     window.dispatchEvent(new Event("continueClicked"));
-    setTstClass('slideText');
+    setTextClass('slideText');
   }
 
   return (
     <div style={{color:"#009dff", width: "100%", overflow: 'hidden', margin: "10px 0 0 10px", display:'flex'}}>
-      {text ? 
+      {textContent ? 
         <>
-          <h1>{text}</h1>
+          <h1>{textContent}</h1>
         </>
       : 
-      <div className = {tstClass} style={{zIndex:1, marginTop: '25vh'}}>
+      <div className = {textClass} style={{zIndex:1, marginTop: '25vh'}}>
         <h4 style={{fontSize: '72px'}}>Olá, tudo bem com você?</h4>
         <h3 style={{fontSize: '96px'}}>Me chamo Gustavo</h3>
         <h4 style={{fontSize: '72px'}}>Bem-vindo ao meu website :)</h4>
-        <Button size='lg' onClick={handleClick}>Ok</Button>
+        <Button size='lg' onClick={handleClick}>Continuar</Button>
       </div>}
       {/*<CanvasDrawing/>*/}
 
