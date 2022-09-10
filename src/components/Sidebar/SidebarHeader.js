@@ -22,7 +22,7 @@ const SidebarHeader = () => {
             <a rel="noreferrer" className='header-icons' target = "_blank" href = "https://linkedin.com/in/gustavo-sm">
               <FaLinkedinIn size='30px' color="#0072b1"/>
             </a>
-            <a rel="noreferrer" className='header-icons' target = "_blank" href = "https://github.com/gus-sm">
+            <a rel="noreferrer" className='header-icons' target = "_blank" href = "https://github.com/gustavo-sm">
               <FaGithub size='30px' color="#bd2c00"/>
             </a>
           </div>
