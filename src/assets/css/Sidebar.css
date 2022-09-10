@@ -37,6 +37,8 @@
 
 #sidebar-header{
     margin-top: 10px;
+    display:flex;
+    justify-content: center;
 }
 
 #header-profile-picture{
