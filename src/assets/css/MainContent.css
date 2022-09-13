@@ -1,0 +1,15 @@
+#MainContent-wrapper {
+    color: #009dff;
+    width: 100%;
+    overflow: hidden;
+    margin: 10px 0 0 10px;
+    display: flex
+}
+
+.MainContent-title{
+    display: flex;
+}
+
+.MainContent-title p {
+    cursor: pointer;
+}

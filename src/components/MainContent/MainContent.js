@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 //import CanvasDrawing from './contents/CanvasDrawing';
 import Welcome from './contents/Welcome';
-
+import '../../assets/css/MainContent.css'
 import manageSessionStorage from '../../helpers/manageSessionStorage';
 
 const contentObj = {
-  aboutme: 'aboutme',
+  bio: 'aboutme',
   skills: 'skills',
   certifications: 'certifications',
   experience: 'experience'  
@@ -31,14 +31,23 @@ const MainContent = () => {
   }
 
   return (
-    <div style={{color:"#009dff", width: "100%", overflow: 'hidden', margin: "10px 0 0 10px", display:'flex'}}>
+    <div id='MainContent-wrapper'>
       {textContent ? 
-        <div >
-          <div style={{display:"flex"}}>
+        <div>
+          <div className='MainContent-title'>
             <h1>{textContent}</h1>
-            <p onClick={handleClick} style={{cursor:"pointer"}}>x</p>
+            <p onClick={handleClick}>x</p>
           </div>
-          <p style={{fontSize: "20px"}}>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
+
+          <p style={{fontSize: "20px"}}>
+            Bacharel em Ciência da Computação pela Universidade Presbiteriana Mackenzie, cursando pós-gradução em DevOps Engineering, atuando principalmente com desenvolvimento de melhorias de serviços baseados em SaaS, PaaS e IaaS, manutenção, extensão/integração de soluções Oracle CX/CRM e desenvolvimento Web. <br/>
+
+            Atualmente estou buscando aprimorar conhecimentos em metodologias e boas práticas em automação, Engenharia de software e processos DevOps.<br/>
+
+            GitHub: https://github.com/gustavo-sm <br/>
+
+            AWS Certified Developer
+          </p>
         </div>
       :
       <Welcome mode={welcomeMode}/>
