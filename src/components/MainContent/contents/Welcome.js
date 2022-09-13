@@ -22,8 +22,7 @@ const Welcome = (props) => {
 
                 <>
                     <h4 style={{fontSize: '48px'}}> Te convido a continuar navegando pelo site</h4>
-                    <h3 style={{fontSize: '52px'}}> para conhecer um pouco mais sobre mim.</h3>
-                    <h4 style={{fontSize: '48px'}}> É um prazer te conhecer!</h4>
+                    <h3 style={{fontSize: '52px'}}> para conhecer um pouco mais sobre mim =D</h3>
                     <h4 style={{fontSize: '72px'}}>{"<-"} </h4>
                 </> 
             }
