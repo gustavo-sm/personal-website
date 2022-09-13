@@ -26,14 +26,20 @@ const MainContent = () => {
     setWelcomeMode('alt_txt');
   });
 
-
+  function handleClick(){
+    setTextContent('');
+  }
 
   return (
     <div style={{color:"#009dff", width: "100%", overflow: 'hidden', margin: "10px 0 0 10px", display:'flex'}}>
       {textContent ? 
-        <>
-          <h1>{textContent}</h1>
-        </>
+        <div >
+          <div style={{display:"flex"}}>
+            <h1>{textContent}</h1>
+            <p onClick={handleClick} style={{cursor:"pointer"}}>x</p>
+          </div>
+          <p style={{fontSize: "20px"}}>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
+        </div>
       :
       <Welcome mode={welcomeMode}/>
     }
