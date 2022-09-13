@@ -18,5 +18,5 @@
 .slideText{
     position: absolute;
     top: -800px;
-    animation: slidetxt 3s forwards;
+    animation: slidetxt 1.5s forwards;
 }
