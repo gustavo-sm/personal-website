@@ -22,7 +22,7 @@ const SidebarComponent = () => {
           <SidebarHeader/>
           
           <SidebarContent>
-            <SidebarMenuItem icon="columns" identifier='aboutme'>Sobre mim</SidebarMenuItem>
+            <SidebarMenuItem icon="columns" identifier='bio'>Bio</SidebarMenuItem>
             <SidebarMenuItem icon="table" identifier='experience'>Experiências</SidebarMenuItem>
             <SidebarMenuItem icon="user" identifier='skills'>Skills</SidebarMenuItem>
             <SidebarMenuItem icon="chart-line" identifier='certifications'>Certificações</SidebarMenuItem>
