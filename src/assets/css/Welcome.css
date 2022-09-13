@@ -12,11 +12,11 @@
 
 .slideText-normal{
     opacity: 0;
-    animation: appear 2s forwards;
+    animation: appear 3s forwards;
 }
 
 .slideText{
     position: absolute;
     top: -800px;
-    animation: slidetxt 1.5s forwards;
+    animation: slidetxt 2s forwards;
 }
