@@ -80,18 +80,3 @@
 .sidebar-link :hover{
     background-color: #3f3f3f;
 }
-
-@keyframes slidetxt {
-    100% {top: 0;}
-}
-
-.slideText-normal{
-    opacity: 0;
-    animation: appear 2s forwards;
-}
-
-.slideText{
-    position: absolute;
-    top: -800px;
-    animation: slidetxt 3s forwards;
-}
