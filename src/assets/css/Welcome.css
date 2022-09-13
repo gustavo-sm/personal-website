@@ -1,0 +1,22 @@
+@keyframes slidetxt {
+    100% {top: 0;}
+}
+@keyframes appear {
+    100% {opacity: 1;}
+}
+
+.slideText, .slideText-normal{
+    z-index: 1;
+    margin-top: 25vh;
+}
+
+.slideText-normal{
+    opacity: 0;
+    animation: appear 2s forwards;
+}
+
+.slideText{
+    position: absolute;
+    top: -800px;
+    animation: slidetxt 3s forwards;
+}
