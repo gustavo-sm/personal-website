@@ -1,23 +1,16 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import SidebarHeader from './SidebarHeader';
 import SidebarContent from './SidebarContent';
 import SidebarFooter from './SidebarFooter';
 import SidebarMenuItem from './SidebarMenuItem';
 import {CDBSidebar as Sidebar} from 'cdbreact';
-import manageSessionStorage from '../../helpers/manageSessionStorage';
 import '../../assets/css/Sidebar.css';
 
 
 const SidebarComponent = () => {
 
   const [sidebarClass, setSidebarClass] = useState('sidebar-wrapper-hidden');
-  
-  useEffect(()=>{
-    if(manageSessionStorage().get('selected')){
-      setSidebarClass('sidebar-wrapper');
-    }
-      
-  },[]);
+
   window.addEventListener('continueClicked', () => {
     setSidebarClass('sidebar-wrapper');
   });
